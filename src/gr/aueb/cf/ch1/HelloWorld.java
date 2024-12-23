@@ -1,3 +1,4 @@
+B
 package gr.aueb.cf.ch1;
 
 /**
@@ -13,7 +14,7 @@ public class HelloWorld {
         * "Hello Coding Factory"
          */
         //System.out.println("Hello Coding Factory!"); // Prints Hello Coding Factory
-        System.out.print("Hello World!");
+        System.out.print("Hello World!!");
         System.out.println(); // This is verbose
     }
 }
