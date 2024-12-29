@@ -1,2 +1,2 @@
 # CF7Testbed
-Coding Factory Java theory examples and practice excercises.
+Coding Factory Java theory examples and practice exercises.
