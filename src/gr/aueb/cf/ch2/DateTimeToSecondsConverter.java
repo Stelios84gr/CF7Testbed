@@ -13,7 +13,7 @@ public class DateTimeToSecondsConverter {
     public static void main(String[] args) {
         final int SECONDS_PER_DAY = 3600 * 24;
         final int SECONDS_PER_HOUR = 3600;
-        final int SECONDS_PER_MINUTE = 24;
+        final int SECONDS_PER_MINUTE = 60;
         Scanner in = new Scanner(System.in);
 
         int inputDays;

@@ -1,5 +1,6 @@
 package gr.aueb.cf.ch12.model;
 
+import gr.aueb.cf.ch12.Student;
 import gr.aueb.cf.ch12.model.*;
 
 public class Main {

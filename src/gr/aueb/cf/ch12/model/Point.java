@@ -22,6 +22,10 @@ public class Point {
         return noOfPoints;
     }
 
+    public static void setNoOfPoints(int noOfPoints) {
+        Point.noOfPoints = noOfPoints;
+    }
+
     public int getX() {
         return x;
     }

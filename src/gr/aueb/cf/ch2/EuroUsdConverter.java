@@ -29,6 +29,6 @@ public class EuroUsdConverter {
         usaDollars = totalUsaCents / 100;
         usaCents = totalUsaCents % 100;
 
-        System.out.printf("%d \u20AC = %d \u0024, %d usa cents", inputEuros, usaDollars, usaCents); //Το "\ u" εισάγει σύμβολο σε χαρακτήρα UTF-8.
+        System.out.printf("%d\u20AC = \u0024%d, %d usa cents", inputEuros, usaDollars, usaCents); //Το "\ u" εισάγει σύμβολο σε χαρακτήρα UTF-8.
     }
 }
