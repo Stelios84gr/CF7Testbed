@@ -2,6 +2,9 @@ package gr.aueb.cf.ch3;
 
 import java.util.Scanner;
 
+/**
+ * Calculates the number of the digits of the number provided.
+ */
 public class DigitCount {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);

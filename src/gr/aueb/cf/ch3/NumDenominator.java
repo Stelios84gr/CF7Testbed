@@ -2,6 +2,9 @@ package gr.aueb.cf.ch3;
 
 import java.util.Scanner;
 
+/**
+ * Υπολογισμός υπολοίπου σε δομή ελέγχου.
+ */
 public class NumDenominator {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

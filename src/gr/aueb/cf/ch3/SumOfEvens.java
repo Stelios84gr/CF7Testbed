@@ -1,12 +1,11 @@
 package gr.aueb.cf.ch3;
 
+import java.util.Scanner;
+
 /**
  * Υπολογίζει το άθροισμα των άρτιων από το 2
  * μέχρι ένα όριο που δίνει ο χρήστης.
  */
-
-import java.util.Scanner;
-
 public class SumOfEvens {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

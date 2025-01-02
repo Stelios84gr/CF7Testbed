@@ -16,7 +16,7 @@ public class SpecialFor {
         }
 
         for (;;) { // Αέναο count
-            System.out.println("For ever");
+            System.out.println("Forever");
             count++;
             if (count == 10) break;
         }

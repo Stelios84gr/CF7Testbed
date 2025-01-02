@@ -7,8 +7,8 @@ import java.util.Scanner;
  * 1. τους συνολικούς βαθμούς μαθημάτων
  * 2. το πλήθος των μαθημάτων
  *
- * θα υπολογίζει τον μέσο όρο και θα χαρακτηρίζει
- * 'Άριστα' αν μέσος όρος είναι >=9, 'Πολύ καλά' αν
+ * Θα υπολογίζει τον μέσο όρο και θα χαρακτηρίζει
+ * 'Άριστα' αν ο μέσος όρος είναι >=9, 'Πολύ καλά' αν
  * ο μέσος όρος είναι >=7, 'Καλώς' αν ο μέσος
  * όρος είναι >=5 και ΄Αποτυχία' αν ο μέσος όρος είναι
  * < 5.
@@ -31,8 +31,8 @@ public class GradesApp {
         System.out.println("Please insert courses count");
         coursesCount = scanner.nextInt();
 
-        if (coursesCount >=0) {
-            System.out.println("Courses count must not be negative or zeor");
+        if (coursesCount <=0) {
+            System.out.println("Courses count must not be negative or zero");
             System.exit(1);
         }
 

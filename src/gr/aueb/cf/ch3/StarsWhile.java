@@ -15,6 +15,8 @@ public class StarsWhile {
 
         System.out.println();
 
+        // OR
+
         while (j >= 1) {
             System.out.print("*");
             j--;

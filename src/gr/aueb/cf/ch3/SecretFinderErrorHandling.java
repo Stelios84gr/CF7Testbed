@@ -3,7 +3,8 @@ package gr.aueb.cf.ch3;
 import java.util.Scanner;
 
 /**
- *
+ * Linearize the branches and check
+ * for errors first.
  */
 public class SecretFinderErrorHandling {
     public static void main(String[] args) {
