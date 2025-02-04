@@ -2,7 +2,7 @@ package gr.aueb.cf.ch5;
 
 /**
  * Υπολογίζει το παραγοντικό του n.
- * n! = 1 * 2 * 3 * ... * n
+ * n! = 1 * 2 * 3 * … * n
  */
 public class Factorial {
 
