@@ -50,7 +50,7 @@ public class MainGen {
         }
     }
 
-    public static <T> void consumerProducer(List<? super T> consumer, List<? extends T> producer) {     // super T σημαίνει οτιδήποτε που είναι υπερκλάση του T
+    public static <T> void consumerProducer(List<? super T> consumer, List<? extends T> producer) {     // κάτω όριο - σημαίνει οτιδήποτε που είναι υπερκλάση του T
         for (T t : producer) {
             consumer.add(t);
         }

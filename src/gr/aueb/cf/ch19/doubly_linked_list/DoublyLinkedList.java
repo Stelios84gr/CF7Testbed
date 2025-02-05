@@ -23,7 +23,7 @@ public class DoublyLinkedList<T> {
 
     /**
      * time complexity: O(1)
-     * @param t
+     * @param t the value to be inserted
      */
     public void insertLast(T t) {
         if (head == null) {
@@ -38,6 +38,78 @@ public class DoublyLinkedList<T> {
 
         tail.setNext(tmp);
         tail = tmp;
+    }
+
+    /**
+     * time complexity: O(1)
+     * @return  the removed node
+     */
+    public Node<T> removeFirst() {
+        Node<T> nodeToReturn;
+
+        if (isEmpty()) return null;
+
+        nodeToReturn = head;
+        if (head.getNext() == null) tail = null;
+        head = head.getNext();
+        head.setPrev(null);
+        return nodeToReturn;
+    }
+
+    /**
+     * time complexity: O(1)
+     * @return  the removed node
+     */
+    public Node<T> removeLast() {
+        Node<T> nodeToReturn;
+
+        if ((isEmpty()) || head.getNext() == null) {
+            return removeFirst();
+        }
+
+        nodeToReturn = tail;
+        tail = tail.getPrev();
+        tail.setNext(null);
+        return nodeToReturn;
+    }
+
+    /**
+     * time complexity: O(n)
+     * @param t
+     * @return
+     */
+    public Node<T> get(T t) {
+        Node<T> nodeToReturn = null;
+
+        for (Node<T> n = head; n != null; n = n.getNext()) {
+            if (n.getItem().equals(t)) {
+                nodeToReturn = n;
+                break;
+            }
+        }
+        return nodeToReturn;
+    }
+
+    public boolean isEmpty() {
+        return head == null;
+    }
+
+    /**
+     * time complexity: O(n)
+     */
+    public void traverse() {
+        for (Node<T> n = head; n != null; n = n.getNext()) {
+            System.out.println(n.getItem());
+        }
+    }
+
+    /**
+     * time complexity: O(n)
+     */
+    public void traverseReverse() {
+        for (Node<T> n = tail; n != null; n = n.getPrev()) {
+            System.out.println(n.getItem());
+        }
     }
 
 }
