@@ -3,7 +3,7 @@ package gr.aueb.cf.ch19.streams;
 import java.util.List;
 import java.util.Optional;
 
-public class FindAndMatchCHECK {
+public class FindAndMatch {
 
     public static void main(String[] args) throws Exception {
         List<String> names = List.of("Alice", "Bob", "Charlie", "David");

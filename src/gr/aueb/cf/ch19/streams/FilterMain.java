@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
 public class FilterMain {
 
     public static void main(String[] args) {
-        List<String> cities = List.of("Athens","London","Toronto", "Tunis", "Athens");
+        List<String> cities = List.of("Athens", "London", "Toronto", "Tunis", "Athens");
 
         var tCities = cities.stream().filter(city -> city.startsWith("T")).collect(Collectors.toList());    // Java 8+ - mutable list
 

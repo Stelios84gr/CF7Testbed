@@ -20,6 +20,10 @@ public class Main {
         products.sort(Comparator.comparing(Product::getName));
         products.sort(Comparator.comparing(Product::getName).thenComparing(Product::getQuantity));
 
-        products.sort(Comparator.comparing(Product::getName).thenComparing(Product::getQuantity));
+        products.sort(Comparator.comparing(Product::getName).thenComparing(Product::getQuantity).thenComparing(Product::getPrice).reversed());
+
+        products.sort(Comparator.comparing(Product::getName).thenComparing(Product::getQuantity, Comparator.reverseOrder()));
+
+        products.forEach(System.out::println);
     }
 }
