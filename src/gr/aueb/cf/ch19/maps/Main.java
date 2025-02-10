@@ -25,16 +25,16 @@ public class Main {
         Iterator<Map.Entry<String, String>> it = countries.entrySet().iterator();
         while (it.hasNext()) {
             Map.Entry<String, String> entry = it.next();
-            System.out.println("Key: " + entry.getKey() + "Value: " + entry.getValue());
+            System.out.println("Key: " + entry.getKey() + " Value: " + entry.getValue());
         }
 
         for (Map.Entry<String, String> entry : countries.entrySet()) {
-            System.out.println("Key: " + entry.getKey() + "Value: " + entry.getValue());
+            System.out.println("Key: " + entry.getKey() + " Value: " + entry.getValue());
         }
 
-        countries.forEach((k, v) -> System.out.println("Key: " + k + "Value: " + v));
+        countries.forEach((k, v) -> System.out.println("Key: " + k + " Value: " + v));
 
         //Remove
-
+        countries.remove(("GR"));
     }
 }

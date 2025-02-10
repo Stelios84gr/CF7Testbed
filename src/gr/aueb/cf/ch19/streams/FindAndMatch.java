@@ -14,13 +14,13 @@ public class FindAndMatch {
         if (query.isPresent()) {
             System.out.println("Firstname: " + query.get());
         }
-
+        // OR
         query.ifPresent(first -> System.out.println("Firstname: " + first));
 
         // Handling empty values with orElse and orElseThrow
         String strFirst = names.stream().filter(name -> name.equals("Bob")).findFirst().orElse(null);
 
-        String strFirst2 = names.stream().filter(name -> name.equals("Bob")).findFirst().orElseThrow(() -> new Exception("Alice does not exist."));
+        String strFirst2 = names.stream().filter(name -> name.equals("Bob")).findFirst().orElseThrow(() -> new Exception("Bob does not exist."));
 
         // Match
         boolean isBobExists = names.stream().anyMatch(name -> name.equals("Bob"));

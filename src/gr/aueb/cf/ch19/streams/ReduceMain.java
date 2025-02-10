@@ -15,11 +15,16 @@ public class ReduceMain {
                 new Product("Oranges", 10.5, 80));
 
         int totalSum1 = numbers.stream().reduce(0, (sum, n) -> sum + n);
-        int totalSum2 = numbers.stream().reduce(0, Integer::sum);
+        // OR
+        int totalSum2 = numbers.stream().reduce(0, (sum, n) -> Integer.sum(sum, n));
+        // OR
+        int totalSum3 = numbers.stream().reduce(0, Integer::sum);
 
         int sumOfQuantities = products.stream().map(Product::getQuantity).reduce(0, Integer::sum);
 
-        int totalSum3 = numbers.parallelStream().reduce(0, Integer::sum, Integer::sum);
-        int totalSum4 = numbers.parallelStream().reduce(0, Integer::sum);
+        int totalSum4 = numbers.parallelStream().reduce(0, Integer::sum, Integer::sum);
+        // OR
+        int totalSum5 = numbers.parallelStream().reduce(0, Integer::sum);
+
     }
 }

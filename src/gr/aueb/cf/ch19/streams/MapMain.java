@@ -18,6 +18,15 @@ public class MapMain {
         int totalQuantities = products.stream().filter(p -> p.getName().equals("Oranges")).mapToInt(Product::getQuantity).sum();
 
         double totalPrice = products.stream().filter(p -> p.getName().equals("Oranges")).mapToDouble(Product::getPrice).sum();
+
+        List<Product> productPricesWithVAT = products.stream().map(p -> new Product(p.getName(), p.getPrice() *1.24, p.getQuantity())).toList();
+
+        System.out.println(listOfFruitNames);
+        System.out.println();
+        System.out.println(totalQuantities);
+        System.out.println();
+        System.out.println(totalPrice);
+        System.out.println(productPricesWithVAT);
     }
 
 }

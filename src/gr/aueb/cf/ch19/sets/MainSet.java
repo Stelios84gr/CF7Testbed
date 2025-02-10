@@ -10,7 +10,7 @@ public class MainSet {
 
         bag.add("Apple");
         bag.add("Orange");
-        bag.add("Apple");   // no duplicates allowd
+        bag.add("Apple");   // no duplicates allowed
 
         if (bag.contains("Apple")) {
             bag.remove("Apple");
