@@ -15,7 +15,7 @@ public class RegExMain {
 //        for (String token : tokens) {
 //            System.out.print(token + " ");
 //        }
-        System.out.println(doReplace(s));
+        System.out.println(doReplaceBackReference(s));
     }
 
     /**

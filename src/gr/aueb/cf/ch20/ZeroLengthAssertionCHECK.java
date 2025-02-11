@@ -1,18 +1,17 @@
-package gr.aueb.cf.test;
+package gr.aueb.cf.ch20;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class test {
+public class ZeroLengthAssertionCHECK {
 
     public static void main(String[] args) {
-        String s = "0Sqwer6ty";
+        String s = "BCd";
 
-        Pattern pattern = Pattern.compile("(?=.*?[a-z])(?=.*[A-Z])(?=.*?[0-9])^.{8,}$");
+        Pattern pattern = Pattern.compile("^(?=.*?[a-z]){4,}$");
         Matcher matcher = pattern.matcher(s);
 
         while (matcher.find()) {
-
             System.out.println(matcher.group());
         }
     }
