@@ -13,7 +13,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        List<Teacher> teachers1 = getFilteredTeachers(teachers, teacher -> teacher.getId() <= 2);
+        List<Teacher> teachers1 = getFilteredTeachers(teachers, teacher -> teacher.getId() >= 2);
         teachers1.forEach(System.out::println);
 
         printTeachers(teachers, teacher -> teacher.printInstanceTeacher());
