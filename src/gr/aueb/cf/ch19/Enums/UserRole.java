@@ -1,4 +1,4 @@
-package gr.aueb.cf.ch19.Enums;
+package gr.aueb.cf.ch19.enums;
 
 public enum UserRole {
     ADMIN,

@@ -1,14 +1,14 @@
-package gr.aueb.cf.ch20;
+package gr.aueb.cf.ch20.regex;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class ZeroLengthAssertionCHECK {
+public class ZeroLengthAssertion {
 
     public static void main(String[] args) {
         String s = "BCd";
 
-        Pattern pattern = Pattern.compile("^(?=.*?[a-z]){4,}$");
+        Pattern pattern = Pattern.compile("^(?=.*?[a-z]).{4,}$");
         Matcher matcher = pattern.matcher(s);
 
         while (matcher.find()) {
