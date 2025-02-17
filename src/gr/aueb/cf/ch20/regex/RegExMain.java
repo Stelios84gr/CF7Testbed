@@ -48,11 +48,11 @@ public class RegExMain {
         return s.matches("[rR]ed|[gG]reen");
     }
 
-    public static boolean beginsWithOneUpperCaseAndEndsIning(String s) {
+    public static boolean beginsWithOneUpperCaseAndEndsWithIng(String s) {
         return s.matches("[A-Z]ing");
     }
 
-    public static boolean isOneLetterEndsinIng(String s) {
+    public static boolean isOneLetterEndsWithIng(String s) {
         return s.matches("[A-Za-z]ing");
     }
 

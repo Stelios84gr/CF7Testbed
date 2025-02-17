@@ -13,7 +13,7 @@ public class DateMatcher2 {
 
         while (matcher.find()) {
             for (int i = 1; i <= matcher.groupCount(); i++) {
-                String grDate = "";
+//                String grDate = "";
                 System.out.print(matcher.group(i) + " ");
 //                grDate += matcher.group(i) + "/";
             }
